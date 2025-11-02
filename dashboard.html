@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Change Password</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="top-section">
+        <div class="welcome-box">
+          <h2>Welcome Theresa!</h2>
+          <p>It's good to see you again</p>
+        </div>
+        <div class="stats">
+          <div class="stat-box">
+            <h3>4</h3>
+            <p>Courses Covered</p>
+          </div>
+          <div class="stat-box">
+            <h3>1.2k</h3>
+            <p>Questions Generated</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Exam Button -->
+      <div class="action-btn">
+        <button class="create-btn">+ Create new exam</button>
+      </div>
+
+      <!-- Table -->
+      <table class="course-table">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Course Code</th>
+            <th>Total Number of Questions</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>CMP 419</td>
+            <td>120</td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>CMP 410</td>
+            <td>30</td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>CMP 407</td>
+            <td>68</td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

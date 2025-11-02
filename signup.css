@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    flex: 1;
+    background-color: #fff;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+  }
+  
+  .left-panel .illustration {
+    max-width: 250px;
+    margin: 0 auto 30px;
+  }
+  
+  .left-panel h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .left-panel h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .left-panel p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-box {
+        background-color: #1c0144;
+         padding: 100px 40px;
+        border-radius: 20px;
+        width: 80%;
+        max-width: 600px;
+        height: 90%;
+        color: #fff;
+        text-align: center;
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .signup-box input[type="email"],
+  .signup-box input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #dcdcdc;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* 4 Boxes */
+  .code-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .code-box {
+    width: 50px;
+    height: 50px;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Button */
+  .signup-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e6f218;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-box button:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Footer text */
+  .login-link {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+  }
+  
+  .login-link a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
