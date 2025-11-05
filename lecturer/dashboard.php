@@ -27,6 +27,11 @@ require_once __DIR__ . '/../includes/sidebar.php';
   <?php require_once __DIR__ . '/../includes/topnav.php'; ?>
 
   <main class="p-6 space-y-6">
+     <?php if($msg = flash_get('success')): ?>
+      <div class="bg-green-100 border border-green-300 text-green-700 p-3 rounded"><?= e($msg) ?></div>
+    <?php elseif($msg = flash_get('error')): ?>
+      <div class="bg-red-100 border border-red-300 text-red-700 p-3 rounded"><?= e($msg) ?></div>
+    <?php endif; ?>
     <!-- Dashboard Stats -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="bg-white shadow rounded p-4">

@@ -81,10 +81,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </div>
     </div>
 
-    <div>
-      <label class="block font-medium mb-1">Correct Answer</label>
-      <input type="text" name="answer" value="<?= e($q['answer']) ?>" class="border w-full px-3 py-2 rounded">
-    </div>
+   <div class="mt-4">
+        <label class="block font-medium mb-1">Correct Answer</label>
+        <select name="answer" class="border w-full px-3 py-2 rounded">
+          <?php foreach (['a', 'b', 'c', 'd', 'e'] as $opt): ?>
+            <option value="<?= $opt ?>" <?= strtolower($q['answer']) === $opt ? 'selected' : '' ?>>
+              <?= strtoupper($opt) ?>
+            </option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+
 
     <button class="bg-[var(--primary)] hover:bg-[#150133] text-white px-4 py-2 rounded-lg font-medium">
       Update Question

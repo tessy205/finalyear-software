@@ -53,7 +53,7 @@ $count = (int)$stmt->fetchColumn();
         <form method="post" stayle="max-width:420px">
         <input type="email" placeholder="Email" name="email">
         <input type="password" placeholder="Password" name="password" >
-        <a href="./forgot-password.html" class="forgot">forgot password?</a>
+
         <button>LOGIN</button>
         <p class="signup">
           <a href="../index.php">Lecturer login</a>
