@@ -81,6 +81,15 @@
     border-radius: 8px;
     background-color: #dcdcdc;
   }
+
+  .signup-box input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #dcdcdc;
+  }
   
   .input-group {
     position: relative;
@@ -140,3 +149,28 @@
     text-decoration: underline;
   }
   
+  .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.code-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.code-box {
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.alert.error { background: #ffe0e0; color: #b40000; }
+.alert.success { background: #e6ffe6; color: #008000; }
